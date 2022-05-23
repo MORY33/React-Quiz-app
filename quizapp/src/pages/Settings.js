@@ -5,7 +5,6 @@ import useAxios from "../hooks/useAxios";
 
 const Settings = () => {
   const {response, error, loading} = useAxios({url: "/api_category.php"})
-  console.log(response.trivia_categories)
   if(loading){
     return(
       <Box mt={20}>
