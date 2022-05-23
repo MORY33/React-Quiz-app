@@ -39,15 +39,18 @@ const Settings = () => {
   };
   
   return(
+    // bgcolor: 'text.disabled',
+    <Box sx={{  borderRadius: '16px'}} p={7}> 
     <form onSubmit={handleSubmit}>
       <SelectField options={response.trivia_categories} label ="category"/>
       <SelectField options={difficultyOptions} label ="difficulty"/>
       <SelectField options={typeOptions} label ="type"/>
-      <TextFieldComp/>
+      <TextFieldComp />
       <Box mt={5} width="100%">
         <Button fullWidth="True" variant="contained" type="submit">Play</Button>
       </Box>
     </form>
+    </Box>
   )
 }
 

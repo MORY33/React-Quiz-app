@@ -12,10 +12,11 @@ function App() {
   return (
     
     <div className='App'>
-        <Container maxWidth="sm">
-          <Box textAlign="center" mt={5}>
+        <Container maxWidth="sm" >
+        
+          
+          <Box textAlign="center" mt={5} >
           <Typography variant="h2" fontWeight="bold">Quiz app</Typography>
-
             <Routes>
               <Route path='/' element = {<Settings/>}/>
               <Route path='/questions' element = {<Questions/>}/>

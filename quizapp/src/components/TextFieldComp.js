@@ -8,7 +8,7 @@ const TextFieldComp = () => {
         <FormControl fullWidth="True">
             <TextField
             onChange={handleChange}
-            variant="outlined"
+            variant="filled"
             label="Amount of questions"
             type="number"
             size="small"

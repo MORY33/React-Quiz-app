@@ -16,7 +16,7 @@ const SelectField = (props) => {
     <Box mt={3} width="100%">
         <FormControl size="small" fullWidth="True">
             <InputLabel>{label}</InputLabel>
-        <Select value={value} label = {label} onChange={handleChange}>
+        <Select value={value} label = {label} onChange={handleChange} variant="filled">
             {options.map(({id, name}) => (
                 <MenuItem value={id} key={id}>
                     {name}
