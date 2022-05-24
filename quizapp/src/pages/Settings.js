@@ -2,9 +2,11 @@ import { Box, Button, CircularProgress, Typography } from "@mui/material"
 import SelectField from "../components/SelectField"
 import TextFieldComp from "../components/TextFieldComp";
 import useAxios from "../hooks/useAxios";
+import { useNavigate } from "react-router-dom";
 
 const Settings = () => {
-  const {response, error, loading} = useAxios({url: "/api_category.php"})
+  const {response, error, loading} = useAxios({url: "/api_category.php"});
+  let history = useNavigate();
   if(loading){
     return(
       <Box mt={20}>
@@ -34,8 +36,9 @@ const Settings = () => {
   ]
 
   // console.log(response)
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
+    history("/questions");
   };
   
   return(
