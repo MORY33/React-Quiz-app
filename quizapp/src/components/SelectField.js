@@ -5,8 +5,11 @@ import { useState } from 'react'
 
 const SelectField = (props) => {
     const { label, options } = props;
+    // console.log(label)
+    // console.log(options)
     const [value, setValue] = useState('');
 
+    // console.log(options )
     const handleChange = (e) => {
         setValue(e.target.value)
     };
